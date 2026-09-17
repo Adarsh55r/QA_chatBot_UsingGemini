@@ -12,7 +12,7 @@ load_dotenv()
 ## Langsmith Tracking
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatbot With OPENAI"
+os.environ["LANGCHAIN_PROJECT"]="Simple Q&A Chatbot With Gemini"
 
 ## Prompt Template
 prompt=ChatPromptTemplate.from_messages(
@@ -32,7 +32,7 @@ def generate_response(question,api_key,engine,temperature,max_tokens):
     return answer
 
 ## #Title of the app
-st.title("Enhanced Q&A Chatbot With OpenAI")
+st.title("Enhanced Q&A Chatbot With Gemini")
 
 
 
